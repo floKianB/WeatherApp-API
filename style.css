@@ -1,0 +1,98 @@
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.input{
+  border: none;
+  background-color: transparent;
+  width: 20rem;
+  font-size: 1.3rem;
+  padding: 5px;
+  border-bottom: 2px solid white;
+  color: aliceblue;
+}
+.input:focus{
+  outline: none;
+}
+
+#container{
+  opacity: 0%;
+  width: 300px;
+  height: 400px;
+  border-radius: 50px;
+  background-color: rgba(20, 124, 209, 0.61);
+  margin-top: 60px;
+  display: center;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+}
+
+#temp, #city, #feelsLike, #country, #wind, #image{
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+}
+#temp{
+  font-size: 6rem;
+}
+#country, #city{
+  margin: 0px;
+}
+#day{
+  color: aliceblue;
+  font-size: 1rem;
+  padding: 7px;
+  background-color: rgba(194, 194, 194, 0.671);
+  display: inline-block;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 20px;
+}
+#image{
+  width: 100px;
+  height: 100px;
+}
+#description{
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: -35px;
+}
+
+
+#country{
+  background-color: rgba(194, 194, 194, 0.671);
+  padding: 3px 5px;
+  border-radius: 50%;
+  margin-left: 10px;
+  font-size: 0.9rem;
+}
+.location{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#feelsLike{
+  font-size: 1rem;
+}
+
+#loader{
+  position: absolute;
+  top: 200px;
+  opacity: 1005;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

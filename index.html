@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <form class="form" style="display: flex; flex-direction: column;">
+        <input class="input" type="text" placeholder="Where are you?">
+        <p id="error" style="color: red; opacity: 0%;">We couldn't find the city</p>
+    </form>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <img id="loader" src="./load.gif" alt="Loader">
+    </div>
+    <div id="container">
+        <div class="location">
+            <div id="city">T</div>
+            <div id="country">N</div>
+        </div>
+        <div id="temp">0°</div>
+
+        <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+            <div id="day"></div>
+        </div>
+        <div id="feelsLike">feels like</div>
+        <div style="display: flex; flex-direction: column ;align-items: center; justify-content: center; margin-top: 20px; position: relative;">
+            <img src="" alt="image" id="image"/>
+            <p id="description">d</p>
+        </div>
+    </div>
+
+    <script src="./weather.js"></script>
+</body>
+</html>
